@@ -3,18 +3,18 @@ using namespace std;
 
 int main(){
     int n;
-    cout<<"Enter Size of Square matrix: ";
+    cout<<"Enter Size of Square matrix row: ";
     cin>>n;
     int arr[n][n];
     int sum = 0;
-    // cout<<"\nEnter array of "<<n*n<< " Elements: ";
+    cout<<"\nEnter array of "<<n*n<< " Elements: ";
 
     for(int i = 0;i<n;i++){
         for(int j = 0 ;j<n;j++){
             cin>>arr[i][j];
         }
     }
-    // cout<<"\nEntered Array of "<<n<<" by "<<n<<" Array is: "<<endl;
+    cout<<"\nEntered Array of "<<n<<" by "<<n<<" Array is: "<<endl;
 
     for(int i = 0;i<n;i++){
         for(int j = 0 ;j<n;j++){
