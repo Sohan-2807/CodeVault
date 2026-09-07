@@ -70,17 +70,13 @@ public:
 
 int main() {
     Array ob;
-
     ob.getData();
     ob.showData();
     ob.findMax();
-
     int e;
     cout << "\nEnter index to delete: ";
     cin >> e;
-
     ob.deleteEle(e);
-
     ob.showData();
 
     ob.sortArray();
