@@ -73,7 +73,6 @@ int main() {
 
     ob.getData();
     ob.showData();
-
     ob.findMax();
 
     int e;
