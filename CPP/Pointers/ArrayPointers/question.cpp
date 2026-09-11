@@ -5,13 +5,13 @@
 using namespace std;
 
 class car{
-    int carid;
-    int carprice;
+    int id;
+    int price;
     int year;
     public:
     void getdata(){
         cout<<"Enter car details";
-        cin>>carid>>carprice>>year;
+        cin>>id>>price>>year;
     }
 };
 
@@ -24,3 +24,12 @@ int main(){
         arr[i].getdata();
     }
 }
+
+/*
+notes:
+This program creates a class 'car' with data members 'id', 'price', and 'year'. It then creates an array of objects of the 'car' class to read and display the details of 'n' cars.
+working of the program:
+1. The program prompts the user to enter the number of cars they want to input.
+2. It then creates an array of 'car' objects of size 'n'.
+3. The program uses a loop to call the 'getdata' member function for each car object in the array, allowing the user to input the details for each car.
+*/
