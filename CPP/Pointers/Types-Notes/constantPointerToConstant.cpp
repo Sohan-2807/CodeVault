@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a=10;
+    const int* const ptr = &a; // constant pointer to a constant integer
+    cout<<"Value of ptr is: "<<*ptr<<endl;
+    // *ptr = 30;  This line will cause a compilation error because 'ptr' points to a constant integer
+    // ptr = &b;  This line will also cause a compilation error because 'ptr' is a constant pointer
+    return 0;
+}
+
+/*
+notes:
+A constant pointer to a constant integer is a pointer that points to an integer whose value cannot be modified through the pointer, and the address stored in the pointer cannot be changed after initialization. 
+In this example, we declare a constant pointer 'ptr' that points to the constant integer variable 'a'. 
+We can read the value of 'a' through the pointer, but we cannot modify it or change the address stored in 'ptr'. 
+Attempting to do so will result in a compilation error.
+*/
