@@ -1,5 +1,6 @@
+// write a program to print reversed string with out using library function;
+
 #include<iostream>
-// #include <cstring>
 using namespace std;
 
 int main(){
