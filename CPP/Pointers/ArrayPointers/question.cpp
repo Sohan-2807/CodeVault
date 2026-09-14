@@ -13,6 +13,9 @@ class car{
         cout<<"Enter car details";
         cin>>id>>price>>year;
     }
+    void showdata(){
+        cout<<"\nCar id:"<<id<<"\nCar price:"<<price<<"\nYear of manufacturing:"<<year;
+    }
 };
 
 int main(){
@@ -22,6 +25,9 @@ int main(){
     car arr[n];
     for(int i =0;i<n;i++){
         arr[i].getdata();
+    }
+    for(int i =0;i<n;i++){
+        arr[i].showdata();
     }
 }
 
