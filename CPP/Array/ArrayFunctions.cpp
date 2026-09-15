@@ -50,6 +50,22 @@ public:
         cout << "\nElement deleted successfully.";
     }
 
+    void insertEle(int index, int value) {
+        if (index < 0 || index > n) {
+            cout << "\nInvalid index!";
+            return;
+        }
+
+        for (int i = n; i > index; i--) {
+            a[i] = a[i - 1];
+        }
+
+        a[index] = value;
+        n++;
+
+        cout << "\nElement inserted successfully.";
+    }
+
     void sortArray() {
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
