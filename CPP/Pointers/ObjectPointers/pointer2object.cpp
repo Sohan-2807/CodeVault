@@ -1,15 +1,15 @@
 #include<iostream>
 using namespace std;
 class Employee{
-    int eid;
-    int esal;
+    int id;
+    int sal;
     public:
     void getdata(int eid,int esal){
-    this->eid = eid;
-    this->esal = esal;
+    this->id = eid;
+    this->sal = esal;
     }
     void showdata(){
-        cout<<eid<<" "<<esal;
+        cout<<id<<" "<<sal;
     }
 };
 
