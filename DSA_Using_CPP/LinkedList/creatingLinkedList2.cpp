@@ -10,9 +10,9 @@ struct Node {
 int main() {
     struct Node *head, *second, *third;
 
-    head = (struct Node*)malloc(sizeof(struct Node));
-    second = (struct Node*)malloc(sizeof(struct Node));
-    third = (struct Node*)malloc(sizeof(struct Node));
+    head = new Node;
+    second = new Node;
+    third = new Node;
 
     head->data = 10;
     head->next = second;
